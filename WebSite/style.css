@@ -75,5 +75,133 @@ header{
     display: none;
 }
 .gototop{
-    
+
+}
+/* Hiring-btn */
+.btn-hiring{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 20px;
+    box-shadow: -5px -5px -20px #00000065;
+    transition: 0.5s;
+}
+.btn-hiring .fa{
+    transform: rotateY(180deg);
+    margin-right: 5px;
+}
+/* :active 마우스를 누른상태에서 때지 않은상태. :를 붙이면 가상클래스로 인식 */
+.btn-hiring:active{
+    transform: scale(0);
+}
+/*##################### Section : about #####################*/
+.about-inner{
+    background: url(images/line-drawing.png) no-repeat right bottom;
+    height: 100%;
+    background-color: #0daec3;
+}
+.about-items{
+    width: 50%;
+    color: #fff;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    margin-left: 100px;
+}
+.item{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.item:hover img{
+    filter: invert(0);
+}
+.item:hover h3{
+    color: #000;
+}
+.item h3{
+    font-size: 26px;
+    font-weight: 500;
+}
+.item img{
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    filter: invert(1);
+    transition: 0.5s;
+}
+.item span{
+
+}
+.item p {
+    overflow: hidden;
+}
+/*##################### Section : awards  #####################*/
+
+.awards-inner{
+    height:100%;
+    border: 1px solid #ddd;
+}
+.awards-inner > div{
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+  
+}
+.about-awards{
+    background-color: #1a1f24;
+    color: #fff;
+}
+.about-heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+}
+.about-heading h2{
+   margin: 0;
+}
+.about-heading p {
+    color: #999;
+    font-size: 17px;
+    line-height: 1.5em; 
+    /*  em; => font-size에 맞게 유동적으로 변환함   */
+    /* margin-bottom: 40px; */
+}
+.victory-jump{
+    background-color: #fff;
+}
+.victory-jump img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+hr.bar {
+    border: none;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    margin: 30px auto;
+}
+/* inline요소는 margin이 없음.하지만 display : inline-block를 적용시키면 가능해짐 */
+.view-awards{
+    color: #bbb;
+    border : 1px solid #bbb;
+    padding: 5px 15px;
+    border-radius: 20px; /* 태두리 동글동글해짐 */
+    transition: 0.5s;  /* 변하는속도 0.5초 */
+    display: inline-block;
+    margin-top: 20px;
+}
+.view-awards:hover{
+    background-color: #31c0ce;
+    color: #fff;
+    border-color: transparent; /* 투명해짐 */
 }

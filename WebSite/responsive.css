@@ -21,6 +21,10 @@ html{
     height: 100%;
 }
 /* Headder */
+header{
+    transition: 0.5s;
+    z-index: 1;
+}
 header.active{
     background-color: #fff;
     transition: 0.5s;
@@ -114,5 +118,10 @@ header.active{
 .gototop.active{
     opacity: 1;
     transform: translateY(0);
+}
+/* Hiring-btn */
+.btn-hiring{
+    right: 20px;
+    bottom: 20px;
 }
 } 
